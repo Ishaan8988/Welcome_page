@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: 'Chakra Petch', sans-serif;
+    background: url("images/Vector\ \(1\).png") top no-repeat, url("images/Vector.png") bottom no-repeat;
+    background-size: 100vw 50vh;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+
+.login-signup {
+    background: black;
+    border-radius: 50px;
+    height: 3.8rem;
+    width: 14vw;
+    display: flex;
+    flex-direction: row;
+    margin: 9vh 17vw 3vh 0;
+
+}
+
+.btn {
+    cursor: pointer;
+    height: 3.8rem;
+    border: 0;
+    border-radius: 50px;
+    color: white;
+    font-size: medium;
+    background: #565ABB;
+}
+
+#login {
+    width: 40%;
+    background: black;
+}
+#signup{
+    font-weight: bold;
+    width: 60%;
+}
+
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35vw;
+    background: #333333;
+    color: white;
+    border-radius: 15px;
+    padding-top: 6vh;
+}
+
+.box div {
+    margin-bottom: 3vh;
+}
+
+.box img {
+    height: 70px;
+    width: 70px;
+}
+
+#next-btn {
+    cursor: pointer;
+    background: #565ABB;
+    height: 6vh;
+    width: 8vw;
+    border: 0;
+    border-radius: 25px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+input {
+    border: none;
+    width: 74%;
+    font-size: large;
+    background: #333333;
+    color: white;
+    padding: 2vh 2vw 2vh 1vw;
+    margin: 0 5px 10px 21px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+#mail-field {
+    width: 27vw;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+#mail-field legend {
+    margin-left: 40px;
+    padding: 0 10px;
+    color: rgb(190, 191, 198);
+}
+
+#login-field {
+    border: none;
+    border-top: 3px solid white;
+}
+
+#login-field legend {
+    margin: 0 35px;
+    padding: 0 7px;
+}
+
+.icons {
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon img {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 40px;
+}
+
+@media screen and (max-width : 940px){
+    .inner-content{
+        width: 325px;
+    }
+    input{
+        padding: 15px 0px 15px 5px;
+    }
+    #mail-field{
+        width: 272px;
+    }
+    #next-btn{
+        width: 100px;
+    }
+
+}
+@media screen and (max-width : 1100px){
+    .login-signup{
+        width: 160px;
+    }
+    #login{
+        width: 73px;
+    }
+    #signup{
+        width: 88px;
+    }
+    .btn{
+        width: 80px;
+    }   
+    
+}
